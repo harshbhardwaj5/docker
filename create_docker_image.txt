@@ -1,8 +1,10 @@
 [root@ip-172-31-12-32 ~]# mkdir /myweb                                                                                                                                  
 [root@ip-172-31-12-32 ~]# cd /myweb                                                                                                                                     
-[root@ip-172-31-12-32 myweb]# vi  index.html                                                                                                                            
-[root@ip-172-31-12-32 myweb]# vim dockerfile                                                                                                                            
--bash: vim: command not found                                                                                                                                           
+[root@ip-172-31-12-32 myweb]# vi  index.html                                                                                             
+
+#inside it write <h1> hello<h1>
+
+
 [root@ip-172-31-12-32 myweb]# vi dockerfile        
 
 from fedora                                                                                                                                                             
