@@ -14,8 +14,7 @@ expose 80
                                                                                                                                                                         
 ~                                                                                                                                                                       
 ~                                                                                                                                                                       
-~                                                                                                                                                                       
-~                                                                                                                                                                       
+~                                                                                                                                                                                                                                                               
 ~                                                                                                                                                                       
 ~                                                                                                                                                                       
 ~  
@@ -24,4 +23,13 @@ expose 80
 docker build -t "adhoc.web" /myweb    
 docker run -itd --run bash 
 docker run -itd --name web1 -p 1234:80 adhoc.web   
-docker images                           
+docker images                                               
+root@ip-172-31-12-32 myweb]# docker ps                                                                                                                                 
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                  NAMES                                   
+124dcb16e58d        adhoc.web           "/bin/bash"              13 minutes ago      Up 13 minutes       0.0.0.0:1234->80/tcp   web1                                    
+0e4c789bca73        bash                "docker-entrypoint..."   17 minute
+
+
+
+[root@ip-172-31-12-32 myweb]#  curl 0.0.0.0:80                                                                                                                          
+heelo all                     
