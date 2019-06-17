@@ -23,5 +23,5 @@ expose 80
 [root@ip-172-31-12-32 myweb]# docker build -t "adhoc.web"
 docker build -t "adhoc.web" /myweb    
 docker run -itd --run bash 
-docker run -itd --name web1 -p 1234:80 adhoc.web    
+docker run -itd --name web1 -p 1234:80 adhoc.web   
 docker images                           
